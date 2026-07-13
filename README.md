@@ -1,4 +1,4 @@
-# Linux Permissions & Ownership
+# Linux Permissions & Ownership | Cloud Support Portfolio Project
 
 A hands-on Cloud Support portfolio project demonstrating Linux file permissions, ownership, access control, and security best practices using Ubuntu (WSL), Git, and GitHub.
 
