@@ -85,9 +85,8 @@ This project reinforced that symbolic and numeric permissions represent the same
 
 ## Future Improvements
 
-<<<<<<< HEAD
-**Author:** Gabriell Bedoy
-=======
+
+
 - Implement POSIX Access Control Lists (ACLs)
 - Demonstrate recursive permission management
 - Automate permission auditing with Bash
@@ -102,4 +101,4 @@ This project reinforced that symbolic and numeric permissions represent the same
 Cloud Support Engineer candidate building hands-on experience with Linux, AWS, networking, and cloud infrastructure.
 
 GitHub: https://github.com/GabbyCloudSec
->>>>>>> 72b563c (Finalize README v1.0)
+
