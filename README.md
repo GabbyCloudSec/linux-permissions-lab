@@ -32,6 +32,8 @@ chmod 644 documents/report.txt
 chmod 600 private/passwords.txt
 ```
 
+> **Note:** The sample files and directories used during this lab were removed after the project was completed because they contained no permanent project content. The commands and screenshots remain as documentation of the completed exercise.
+
 ---
 
 ## Verification
