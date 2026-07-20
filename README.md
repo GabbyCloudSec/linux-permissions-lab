@@ -1,39 +1,39 @@
-# Linux Permissions & Ownership
+# 🔐 Linux Permissions & Ownership
 
-> Part of my Cloud Support Engineering portfolio, demonstrating Linux file permissions, ownership, access control, and troubleshooting through a real-world scenario.
+## Overview
 
-**Status:** Complete
+This project simulates troubleshooting Linux file access issues caused by incorrect permissions and ownership. The objective was to restore appropriate access, apply least-privilege permissions, and verify each change using standard Linux administration tools.
+
+**Status:** ✅ Complete
 
 ---
 
-## At a Glance
+## Skills Demonstrated
 
-**Scenario:** A user lost file access and could no longer run a backup script after permissions were modified.
+- Linux file permissions and ownership
+- Access control and least privilege
+- Symbolic and numeric permissions
+- Command-line troubleshooting
+- Technical documentation
+- Git and GitHub workflow
 
-**Solution:** Diagnosed the issue, restored correct permissions using `chmod`, applied least-privilege access, and verified every change with `ls -l`.
+---
 
-**Skills:** Linux permissions & ownership · Access control · Least privilege · Command-line troubleshooting · Technical documentation
+## Tools Used
 
-**Tools:** Ubuntu (WSL2) · Bash · Git · GitHub
+- Ubuntu 26.04 LTS (WSL2)
+- Bash
+- Git
+- GitHub
+- Visual Studio Code
 
 ---
 
 ## Scenario
 
-A Cloud Support Engineer was asked to investigate why a user could no longer access important files or execute a backup script after file permissions had been modified.
+This project simulates investigating why a user could no longer access important files or execute a backup script after file permissions had been modified.
 
-The solution involved reviewing Linux file permissions, ownership, and access rights, applying least-privilege permissions, restoring execute access where required, and verifying every change using standard Linux administration tools.
-
----
-
-## Objectives
-
-- Understand Linux file permissions and ownership
-- Practice modifying permissions with `chmod`
-- Compare symbolic (`rwx`) and numeric (`755`, `644`, `600`) permissions
-- Apply the principle of least privilege
-- Verify permission changes using `ls -l`
-- Document a real-world troubleshooting workflow
+The solution involved reviewing Linux file permissions, ownership, and access rights, restoring execute permission where required, applying least-privilege permissions, and verifying every change using standard Linux administration tools.
 
 ---
 
@@ -55,13 +55,13 @@ chmod 644 documents/report.txt
 chmod 600 private/passwords.txt
 ```
 
-> **Note:** The sample files and directories used during this lab were removed after the project was completed because they contained no permanent project content. The commands and screenshots remain as documentation of the completed exercise.
-
 ---
 
 ## Verification
 
 The solution was verified by comparing file permissions before and after each change and confirming that only authorized users retained the intended level of access.
+
+### Verification Results
 
 | File | Permissions | Purpose |
 |------|-------------|---------|
@@ -74,45 +74,34 @@ The solution was verified by comparing file permissions before and after each ch
 ## Screenshots
 
 ### Project Structure
+
 ![Project Structure](screenshots/01-project-structure.png)
 
+---
+
 ### Technical Implementation
+
 ![Technical Implementation](screenshots/02-technical-implementation.png)
 
+---
+
 ### Verification
+
 ![Verification](screenshots/03-verification.png)
 
 ---
 
-## Technologies Used
+## Key Takeaways
 
-- Ubuntu 26.04 LTS (WSL2)
-- Bash
-- Git
-- GitHub
-- Visual Studio Code
+This project reinforced that symbolic and numeric permissions represent the same Linux permission model in different formats. It also demonstrated that execute permission is required for scripts to run and highlighted the importance of verifying every permission change rather than assuming a command completed successfully.
+
+Working through this scenario strengthened my understanding of how permissions and ownership work together to protect systems while allowing authorized users to perform their tasks efficiently.
 
 ---
 
-## Key Takeaway
-
-This project reinforced that symbolic and numeric permissions represent the same access model in different formats. It also demonstrated that execute permission is required for scripts to run, and highlighted the importance of verifying every permission change with `ls -l` rather than assuming a command completed successfully.
-
----
-
-## Future Improvements
+## Next Steps
 
 - Implement POSIX Access Control Lists (ACLs)
 - Demonstrate recursive permission management
 - Automate permission auditing with Bash
 - Extend the project to an AWS EC2 Linux instance
-
----
-
-## Author
-
-**Gabriell Bedoy**
-Aspiring Cloud Support Engineer building hands-on experience with Linux, AWS, networking, and cloud infrastructure.
-
-GitHub: https://github.com/GabbyCloudSec
-
